@@ -1,0 +1,218 @@
+.footer {
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__logo {
+    color: #ffffff;
+}
+
+
+
+.address-list__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            color: var(--accent);
+        }
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.address-list__item {
+    margin-bottom: 9px;
+    &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+
+
+
+
+.address-list__link--white {
+    color: #ffffff;
+}
+
+.address-list__link--grey {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-soc {
+    margin-bottom: 60px;
+    
+    @include tablet {
+            margin-bottom: 0;
+        }
+
+}
+
+.footer-soc__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer__container {
+    text-align: center;
+    
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    @include desktop {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+    }
+    
+}
+
+.footer__address {
+    margin-bottom: 60px;
+
+    @include tablet {
+    margin-bottom: 0;
+    }
+
+    @include desktop {
+    margin-right: 70px;
+    flex-grow: 1;
+    }
+    
+    }
+    
+
+
+//  .footer-logo {
+//             width: 100%;
+//             @include mobile {
+//                 width: 154px;
+//             }
+//         }
+
+.footer-soc-list__icon {
+    fill: #ffffff;
+}
+
+.footer-soc-list__link {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            background-color: var(--accent);
+        }
+}
+
+
+
+.footer-email {
+    @include tablet {
+        margin-top: 60px;
+    }
+    @include desktop {
+        margin-left: 93px;
+        margin-top: 0;
+    }
+}
+
+.footer-email__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-form__item {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    @include desktop {
+        margin-bottom: 0;
+        width: 358px;
+    }
+}
+
+.footer-form {
+
+    @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.footer-form__btn {
+    border: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: var(--accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 200px;
+    height: 50px;
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            background-color: #188ce8;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    @include desktop {
+        margin-left: 12px;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+}
+
+.footer-form__btn:hover,
+.footer-form__btn:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-form__icon {
+    margin-left: 10px;
+}
